@@ -1,0 +1,135 @@
+# WordPress
+##################################################
+docroot/.htaccess
+# block git files from composer installs
+.git
+.git/*
+
+# WP-CLI
+db-sync
+sql-dump-*.sql
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# lock files
+*.lock
+
+# Application
+docroot/content/upgrade
+docroot/content/uploads/*
+!docroot/content/uploads/.gitkeep
+
+# Vendor (e.g. Composer)
+vendor/*
+!vendor/.gitkeep
+
+# Node Package Manager
+node_modules
+
+# Vagrant
+bin
+.vagrant
+# WordPress and the like that don't need tracked #
+##################################################
+
+*~
+.svn
+.cvs
+.git
+.listing
+*.bak
+*.swp
+plugins/wp-file-cache/cache
+cache
+_wpeprivate
+.cache
+temp
+tmp
+*.tmp
+imagecache*
+uploads*
+*_backup
+gt-cache
+ics-importer-cache
+pclzip-*
+
+# Sitemap #
+sitemap.xml
+sitemap.xml.gz
+
+# WordPress debugging files #
+log.txt
+debug.log
+
+# Compiled source - known large file types #
+############################################
+*.hqx
+*.bin
+*.exe
+*.dll
+*.deb
+*.img
+*.msi
+*.msp
+*.msm
+*.mid
+*.midi
+*.kar
+*.mp3
+*.ogg
+*.m4a
+*.ra
+*.3gpp
+*.3gp
+*.mp4
+*.mpeg
+*.mpg
+*.mov
+*.docrootm
+*.flv
+*.m4v
+*.mng
+*.asx
+*.asf
+*.wmv
+*.avi
+*.tgz
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon
+ehthumbs.db
+Thumbs.db
+
+# BRL Non-Tracked Files #
+#########################
+.htaccess
+license.txt
+readme.html

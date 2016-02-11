@@ -1,0 +1,117 @@
+{
+  "name": "newmediadenver/wp",
+  "type": "project",
+  "license": "MIT",
+  "description": "RiotLabs / NewMedia's WordPress stack",
+  "homepage": "https://github.com/newmediadenver/wp",
+  "authors": [
+    {
+      "name": "Nathan Smith",
+      "email": "webalkymst@gmail.com",
+      "homepage": "https://github.com/alkymst"
+    }
+  ],
+  "keywords": [
+    "wordpress", "stack", "composer", "vagrant", "wp"
+  ],
+  "support": {
+    "issues": "https://github.com/newmediadenver/wp/issues"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "roots",
+        "type": "wordpress-theme",
+        "version": "7.0.3",
+        "source": {
+          "url": "git@github.com:roots/sage.git",
+          "type": "git",
+          "reference": "271fad502add8dfd839af8bf901e2f830c7a6c94"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "gravityforms",
+        "type": "wordpress-plugin",
+        "version": "1.9.13.26",
+        "source": {
+          "url": "git@github.com:gravityforms/gravityforms.git",
+          "type": "git",
+          "reference": "aa5f0e7f8f10eba3a0f87f85d36acf33a94a4c6c"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "acf",
+        "type": "wordpress-plugin",
+        "version": "5.3.2.2",
+        "source": {
+          "url": "git@github.com:newmediadenver/wp-acf.git",
+          "type": "git",
+          "reference": "fa616408991ce5ed9332799d8a3d4668c1febac7"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "wpcli-acf",
+        "type": "wordpress-plugin",
+        "version": "1.2.1",
+        "source": {
+          "url": "git@github.com:hoppinger/advanced-custom-fields-wpcli.git",
+          "type": "git",
+          "reference": "139b0ad02c811a7c7f33bd103e564db5d6e6b2bf"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "mu-plugins",
+        "type": "wordpress-muplugin",
+        "version": "1.0.0",
+        "source": {
+          "url": "git@github.com:newmediadenver/wp-mu-plugins.git",
+          "type": "git",
+          "reference": "d4ed90ded94a065bcce088892787baafab152930"
+        }
+      }
+    }
+  ],
+  "require": {
+    "php": ">=5.3",
+    "johnpbloch/wordpress": "4.3.1",
+    "composer/installers": "v1.0.12",
+    "vlucas/phpdotenv": "1.0.9",
+    "roots": "7.0.3",
+    "gravityforms": "~1.9",
+    "acf": "~5.3",
+    "wpcli-acf": "~1.2",
+    "wpackagist-plugin/wp-cfm": "~1.4",
+    "wpackagist-plugin/wordpress-importer": "~0.6",
+    "wpackagist-plugin/woocommerce": "2.4.13",
+    "wpackagist-plugin/wordpress-seo": "~3.0",
+    "mu-plugins": "~1.0.0"
+  },
+  "extra": {
+    "installer-paths": {
+      "docroot/content/{$name}/": ["type:wordpress-muplugin"],
+      "docroot/content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "docroot/content/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "docroot/wp"
+  }
+}
