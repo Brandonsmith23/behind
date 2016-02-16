@@ -26,6 +26,14 @@ function roots_setup() {
   // Add post formats
   // http://codex.wordpress.org/Post_Formats
   add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio'));
+  // Insert following code on line 27 of the init.php file
+
+  //Image size for masthaed
+  add_image_size('header-image', 2000, 600, array(center, center));             // Determines the Single Header image size on a large screen
+  add_image_size('header-image-mobile', 600, 600, array(center, center));       // Determines the Single Header image size on a small screen
+  add_image_size('homeslider-image', 2000, 600, array(center, center));         // Determines the Slider Image sizes on a large screen
+  add_image_size('homeslider-mobile', 600, 600, array(center, center));         // Determines the Slider Image sizes on a large screen
+
 
   // Add HTML5 markup for captions
   // http://codex.wordpress.org/Function_Reference/add_theme_support#HTML5
