@@ -1,0 +1,144 @@
+.with-masthead {
+  .main {
+
+    // margin-top: 50vh;
+    // min-height: 43vh;
+  }
+}
+
+
+
+section.masthead {
+  color: #fff;
+  position: relative;
+
+  .carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    .carousel-control {
+      .glyphicon-chevron-right, .glyphicon-chevron-left {
+        width: 45px;
+        height: 45px;
+        font-size: 45px;
+      }
+    }
+
+  }
+
+  picture {
+
+    position: relative;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+  }
+
+  .item {
+    transform-style: preserve-3d;
+    max-height: 55vh;
+    // position: relative;
+    overflow: hidden;
+  }
+
+  .caption {
+    z-index: 999;
+    width: 100%;
+    padding: 0 10%;
+    bottom: 50%;
+    transform: translateY(50%);
+    position: absolute;
+    text-align: center;
+    // @media all and (min-width: 992px ) {
+    //   width: 75%;
+    // }
+
+      h1, h2 {
+        .home & {
+          margin-top: 1px;
+        }
+      }
+      p {
+        .home & {
+          font-size: 1.5rem;
+          font-weight: 600;
+          margin-top: -1%;
+          @media all and (min-width: 992px) {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      h1 {
+        color: rgba(255, 255, 255, 0.95);
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        padding-bottom: 1%;
+        margin-top: 1px;
+        z-index: 9999;
+        font-size: 2.2rem;
+
+        @media all and (min-width: 992px ) {
+          font-size: 3.5rem;
+        }
+      }
+        h2 {
+          font-size: 2rem;
+          @media (min-width: @screen-md-min) {
+            font-size: 3rem;
+            margin-top: inherit;
+          }
+        }
+        .vc_btn3-container {
+          a.vc_btn3 {
+            min-width: 210px;
+          }
+        }
+  }
+
+  .item:after {
+    content: "";
+    //background: url("http://localhost:1025/content/plugins/Ultimate_VC_Addons/assets/images/patterns/01.png") repeat;
+    height: 55vh;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: block;
+    bottom: 0;
+    position: absolute;
+  }
+
+}
+
+// make images responsive
+img,
+iframe {
+  .img-responsive();
+}
+picture {
+  display: block;
+  img {
+    .img-responsive();
+    width: 100%;
+  }
+}
+
+  // .btn-default:hover, .btn-default:focus, .btn-default.focus,
+  // .btn-default:active, .btn-default.active {
+  //   background-color: @brand-lightblue;
+  // }
+  // // add styles for full slide link
+  // .full-slide-link {
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   right: 0;
+  //   z-index: 1;
+  // }
+// }

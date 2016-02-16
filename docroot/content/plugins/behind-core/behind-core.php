@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Behind the Quarter Core
-Description: Core Plugin For Launchers
+Description: Core Plugin For Behind the Quarter
 Version: 0.1
 Author: newmedia
 Author URI: http://newmediadenver.com/

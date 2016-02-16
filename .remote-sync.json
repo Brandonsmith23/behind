@@ -1,0 +1,12 @@
+{
+  "uploadOnSave": true,
+  "hostname": "127.0.0.1",
+  "port": "2222",
+  "target": "/var/www/behind/current",
+  "ignore": [
+    ".git/**"
+  ],
+  "username": "vagrant",
+  "password": "vagrant",
+  "transport": "scp"
+}
