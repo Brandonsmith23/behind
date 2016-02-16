@@ -19,3 +19,7 @@
     </nav>
   </div>
 </header>
+
+<?php
+  load_template(STYLESHEETPATH.'/templates/components/masthead.php');
+?>
