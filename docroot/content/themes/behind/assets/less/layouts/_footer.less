@@ -1,1 +1,40 @@
-.content-info { }
+.content-info {
+  padding: 2%;
+  background: @brand-red;
+  color: #fff;
+
+  a {
+    color: #fff;
+    &:hover {
+      color: @brand-lightgray;
+    }
+  }
+
+
+
+// Footer Sidebar styles
+  .footer-main {
+
+  }
+
+
+  // Footer Social Media & Copyright styles
+  .footer-secondary {
+    text-align: center;
+    .designed {
+      font-size: @font-size-small;
+    }
+    .copyright {
+      font-size: @font-size-small;
+    }
+    .smedia {
+      ul {
+        padding: 0px;
+        li {
+          display: inline-block;
+          margin: 0px 2%;
+        }
+      }
+    }
+  }
+}
