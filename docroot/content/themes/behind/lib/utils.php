@@ -30,6 +30,7 @@ function roots_body_class($classes) {
 add_filter('body_class', 'roots_body_class');
 
 
+
 // take an array and add it as inline styles
 if( ! function_exists( 'arr_to_inline_css' ) ) :
 	function arr_to_inline_css( $arr ) {
@@ -303,4 +304,3 @@ if( ! function_exists( 'is_blog' ) ) :
 			&& ( get_current_post_type() == 'post') ) ? true : false;
 	}
 endif;
-
