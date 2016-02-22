@@ -26,7 +26,7 @@ Domain Path: /languages
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MESITENAME HANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MEbehind HANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * **********************************************************************
  */

@@ -13,7 +13,7 @@
         <p>Designed by <a href="http://www.1fee.com" alt="1FEE.com">1FEE</a>
       </div>
       <div class="copyright col-md-4">
-        <p>Copyright 2016 Launchers.</p>
+        <p>Copyright 2016 Behind the Quarter.</p>
       </div>
       <div class="smedia col-md-4">
         <ul>

@@ -1,6 +1,6 @@
 <header class="banner navbar navbar-default navbar-static-top" role="banner">
   <div class="container">
-    <div class="navbar-header">
+    <div class="navbar-header row">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -22,3 +22,14 @@
 
 <?php
   load_template(STYLESHEETPATH.'/templates/components/masthead.php');
+?>
+
+<div class="container">
+  <div class="sheader">
+    <?php
+      if (has_nav_menu('secondary_navigation')) :
+        wp_nav_menu(array('theme_location' => 'secondary_navigation', 'menu_class' => 'snav'));
+      endif;
+    ?>
+  </div>
+</div>
