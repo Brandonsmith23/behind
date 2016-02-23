@@ -303,4 +303,3 @@ if( ! function_exists( 'is_blog' ) ) :
 			&& ( get_current_post_type() == 'post') ) ? true : false;
 	}
 endif;
-

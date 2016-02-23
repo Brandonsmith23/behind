@@ -1,1 +1,87 @@
-.banner { }
+.banner {
+  border-bottom: 24px solid @brand-blue;
+  margin-bottom: 0;
+
+  // Logo
+  .navbar-brand {
+    padding: 0;
+    z-index: 1000;
+    img {
+      width: 150px;
+      @media all and (min-width: 992px) {
+        width: 200px;
+      }
+    }
+  }
+  // Primary Navigation
+  nav.navbar-collapse {
+    border-color: transparent;
+    border: 0px;
+    #menu-menu-1 {
+      margin: 16px 0;
+      float: none;
+      li {
+        float: none;
+
+        @media all and (min-width: 992px){
+          display: inline-block;
+        }
+        a {
+          padding: 10px 15px;
+          border-top: 2px solid transparent;
+          border-bottom: 2px solid transparent;
+          &:hover {
+            border-top: 2px solid @brand-red;
+            border-bottom: 2px solid @brand-blue;
+          }
+        }
+
+
+        // Active Links
+        &.active {
+          a {
+            background-color: transparent;
+            border-top: 2px solid @brand-red;
+            border-bottom: 2px solid @brand-blue;
+            &:hover {
+              border-top: 2px solid @brand-blue;
+              border-bottom: 2px solid @brand-red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Secondary Navigation
+.sheader {
+  background-color: lighten(@brand-blue, 15%);
+  text-align: center;
+  margin-bottom: 20px;
+  .container {
+    .snavbar {
+      .snav {
+        padding: 0;
+        margin: 0;
+        li {
+          display: inline-block;
+          padding: 2%;
+          &:hover {
+            background-color: darken(@brand-blue, 15%);
+          }
+          a {
+            color: #fff;
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+nav {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}

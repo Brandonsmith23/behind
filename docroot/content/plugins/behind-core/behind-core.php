@@ -5,7 +5,7 @@ Description: Core Plugin For Behind the Quarter
 Version: 0.1
 Author: newmedia
 Author URI: http://newmediadenver.com/
-Text Domain: launchers-core
+Text Domain: behind-core
 Domain Path: /languages
 */
 
@@ -26,7 +26,7 @@ Domain Path: /languages
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MElaunchers HANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MEbehind HANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * **********************************************************************
  */
@@ -140,10 +140,10 @@ final class behindcore {
    */
   private function define_constants() {
     $upload_dir = wp_upload_dir();
-    $this->define( 'launchers_PLUGIN_FILE', __FILE__ );
-    $this->define( 'launchers_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
-    $this->define( 'launchers_VERSION', $this->version );
-    $this->define( 'launchers_LOG_DIR', $upload_dir['basedir'] . '/'.self::$name.'-logs/' );
+    $this->define( 'behind_PLUGIN_FILE', __FILE__ );
+    $this->define( 'behind_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
+    $this->define( 'behind_VERSION', $this->version );
+    $this->define( 'behind_LOG_DIR', $upload_dir['basedir'] . '/'.self::$name.'-logs/' );
   }
 
   /**
@@ -186,10 +186,10 @@ final class behindcore {
   public function includes() {
 
     // taxonomies
-    // include_once( trailingslashit( $this->plugin_path() ) . 'includes/taxonomies.php' );
+    # include_once( trailingslashit( $this->plugin_path() ) . 'includes/taxonomies.php' );
 
     // post-types
-    // include_once( trailingslashit( $this->plugin_path() ) . 'includes/post-types.php' );
+    # include_once( trailingslashit( $this->plugin_path() ) . 'includes/post-types.php' );
 
     if ( $this->is_request( 'admin' ) ) {
       $this->admin_includes();
@@ -245,12 +245,12 @@ final class behindcore {
     do_action( 'before_' . self::$name . '_init' );
 
     // Load functions.
-    add_action( 'init', array( &$this, 'functions' ) );
+    # add_action( 'init', array( &$this, 'functions' ) );
 
     // After init action
     do_action( 'after_' . self::$name . '_init' );
 
-    add_filter('is_woocommerce', array( &$this, 'launchers_is_woocommerce' ));
+    add_filter('is_woocommerce', array( &$this, 'behind_is_woocommerce' ));
 
   }
 
@@ -290,7 +290,7 @@ final class behindcore {
     include_once( trailingslashit( $this->plugin_path() ) . 'functions.php' );
   }
 
-  public function launchers_is_woocommerce($check){
+  public function behind_is_woocommerce($check){
     if (is_tax ('product_industry')|| is_page(103)) {
       return true;
     }
@@ -421,11 +421,11 @@ final class behindcore {
  *
  * @return behindcore
  */
-function launchers() {
+function behind() {
   return behindcore::instance();
 }
 
 // Global for backwards compatibility.
-$GLOBALS['behindcore'] = launchers();
+$GLOBALS['behindcore'] = behind();
 
 }
