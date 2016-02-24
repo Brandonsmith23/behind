@@ -14,10 +14,10 @@
     }
   }
   // Primary Navigation
-  nav.navbar-collapse {
+  nav {
     border-color: transparent;
     border: 0px;
-    #menu-menu-1 {
+    #menu-main {
       margin: 16px 0;
       float: none;
       li {
@@ -40,7 +40,7 @@
         // Active Links
         &.active {
           a {
-            background-color: transparent;
+            background-color: transparent !important;
             border-top: 2px solid @brand-red;
             border-bottom: 2px solid @brand-blue;
             &:hover {
@@ -53,6 +53,8 @@
     }
   }
 }
+
+
 // Secondary Navigation
 .sheader {
   background-color: lighten(@brand-blue, 15%);
