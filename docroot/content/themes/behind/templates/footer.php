@@ -17,10 +17,9 @@
       </div>
       <div class="smedia col-md-4">
         <ul>
-          <li><a href="http://facebook.com"><i class="fa fa-facebook fa-lg"></i></a></li>
-          <li><a href="http://twitter.com"><i class="fa fa-twitter fa-lg"></i></a></li>
-          <li><a href="http://youtube.com"><i class="fa fa-youtube-play fa-lg"></i></a></li>
-          <li><a href="http://googleplus.com"><i class="fa fa-google-plus fa-lg"></i></a></li>
+          <li><a href="https://www.facebook.com/behindthequarter/"><i class="fa fa-facebook fa-lg"></i></a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.btqrealestate&hl=en"><i class="fa fa-download fa-lg"></i> Google</a></li>
+          <li><a href="https://itunes.apple.com/us/app/app-usa/id1063414332?mt=8"><i class="fa fa-download fa-lg"></i> Apple</a></li>
         </ul>
     </div>
   </div>
