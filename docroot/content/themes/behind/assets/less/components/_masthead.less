@@ -31,6 +31,7 @@ section.masthead {
     width: 100%;
     display: block;
     overflow: hidden;
+    transition: all 500ms linear;
 
     img {
       width: 100%;
@@ -112,6 +113,11 @@ section.masthead {
     position: absolute;
   }
 
+}
+
+.item:hover picture {
+  width: 110%;
+  transform: translateX(-5%);
 }
 
 // make images responsive
