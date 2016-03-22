@@ -303,3 +303,8 @@ if( ! function_exists( 'is_blog' ) ) :
 			&& ( get_current_post_type() == 'post') ) ? true : false;
 	}
 endif;
+
+function new_excerpt_length($length) {
+    return 20;
+}
+add_filter('excerpt_length', 'new_excerpt_length');
