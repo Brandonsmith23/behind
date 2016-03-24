@@ -60,7 +60,10 @@
 .sheader {
   background-color: lighten(@brand-blue, 10%);
   text-align: center;
-  font-size: @font-size-small;
+  font-size: 10px;
+  @media all and (min-width: 768px) {
+    font-size: @font-size-small;
+  }
   .container {
     .snavbar {
       .snav {
@@ -68,10 +71,16 @@
         margin: 0;
         li {
           display: inline-block;
-          padding: 1%;
+          padding: 5px;
+          @media all and (min-width: 768px) {
+            padding: 11px;
+          }
           &:hover {
             background-color: darken(@brand-blue, 15%);
-            padding: 1%;
+            padding: 5px;
+            @media all and (min-width: 768px) {
+              padding: 11px;
+            }
           }
           a {
             color: #fff;
@@ -80,9 +89,14 @@
             }
           }
           &.menu-download-our-app-on {
-            display: none;
-            @media all and (min-width: 768px) {
-              display: inline-block;
+            &:hover {
+              background: none;
+            }
+            &:focus {
+              background: none;
+            }
+            a {
+              cursor: default;
             }
           }
         }
