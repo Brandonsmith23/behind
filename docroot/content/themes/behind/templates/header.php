@@ -2,11 +2,9 @@
   <div class="sheader">
     <div class="container">
       <nav class="snavbar">
-        <?php
-          if (has_nav_menu('secondary_navigation')) :
-            wp_nav_menu(array('theme_location' => 'secondary_navigation', 'menu_class' => 'snav'));
-          endif;
-        ?>
+        <div class="appstore">
+            <a href="https://itunes.apple.com/us/app/app-usa/id1063414332?mt=8"><img style="width: 10%; margin-left: 1%;" src="/content/themes/behind/assets/img/apple-app-store.png" /></a><a href="https://play.google.com/store/apps/details?id=com.btqrealestate&hl=en"><img style="width: 9%;" src="/content/themes/behind/assets/img/google-play-badge.png" /></a>
+        </div>
       </nav>
     </div>
   </div>
@@ -22,7 +20,7 @@
       <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><img src=<?php echo get_stylesheet_directory_uri().'/assets/img/btq-logo.png'; ?>></a>
     </div>
 
-    <nav class="collapse navbar-collapse col-md-5 col-md-offset-3 col-sm-12" role="navigation">
+    <nav class="collapse navbar-collapse col-md-8 col-md-offset-3 col-sm-12" role="navigation">
       <?php
         if (has_nav_menu('primary_navigation')) :
           wp_nav_menu(array('theme_location' => 'primary_navigation', 'walker' => new Roots_Nav_Walker(), 'menu_class' => 'nav navbar-nav'));

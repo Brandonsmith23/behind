@@ -117,11 +117,11 @@ if( $banner_arr = display_masthead() ) { ?>
         if( isset($banner['caption']) && ! empty($banner['caption']))
           $caption_html .= wpautop($banner['caption']);
 
-
-
         // link(s)
         if( isset($banner['link']) && !empty($banner['link']) && count($banner['link']) >= 1) {
           foreach( $banner['link'] as $link ) {
+
+            $full_slide_link_html = false;
 
             switch($link['acf_fc_layout']) {
 
@@ -150,8 +150,6 @@ if( $banner_arr = display_masthead() ) { ?>
         }
 
 
-
-
         if( !empty($caption_html) )
           $caption_html = html( 'div', array('class' => arr_to_classnames($caption_class)), $caption_html );
 
@@ -171,8 +169,10 @@ if( $banner_arr = display_masthead() ) { ?>
         );
 
         if ($full_slide_link_html) {
+          // echo $full_slide_link_html;
           echo html( 'div', $item_args, $picture_html, $caption_html, $full_slide_link_html );
         } else {
+          // echo "Not-Full-Slide";
           echo html( 'div', $item_args, $picture_html, $caption_html );
         }
 

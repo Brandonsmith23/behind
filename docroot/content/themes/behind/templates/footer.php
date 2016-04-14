@@ -10,16 +10,13 @@
     </div>
     <div class="footer-secondary row">
       <div class="designed col-md-4">
-        <p>Designed by <a href="http://www.1fee.com" alt="1FEE.com">1FEE</a>
+
       </div>
       <div class="copyright col-md-4">
         <p>Copyright 2016 Behind the Quarter.</p>
       </div>
       <div class="smedia col-md-4">
-        <ul>
-          <li><a href="https://play.google.com/store/apps/details?id=com.btqrealestate&hl=en"><i class="fa fa-google fa-lg"></i> Google</a></li>
-          <li><a href="https://itunes.apple.com/us/app/app-usa/id1063414332?mt=8"><i class="fa fa-apple fa-lg"></i> Apple</a></li>
-        </ul>
+        <a href="https://itunes.apple.com/us/app/app-usa/id1063414332?mt=8"><img style="width: 30%;" src="/content/themes/behind/assets/img/apple-app-store.png" /></a><a href="https://play.google.com/store/apps/details?id=com.btqrealestate&hl=en"><img style="width: 28%; margin-left: 2%;" src="/content/themes/behind/assets/img/google-play-badge.png" /></a>
     </div>
   </div>
 </footer>
