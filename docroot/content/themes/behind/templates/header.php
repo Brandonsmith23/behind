@@ -20,7 +20,7 @@
       <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><img src=<?php echo get_stylesheet_directory_uri().'/assets/img/btq-logo.png'; ?>></a>
     </div>
 
-    <nav class="collapse navbar-collapse col-md-8 col-md-offset-3 col-sm-12" role="navigation">
+    <nav class="collapse navbar-collapse col-md-8 col-sm-12" role="navigation">
       <?php
         if (has_nav_menu('primary_navigation')) :
           wp_nav_menu(array('theme_location' => 'primary_navigation', 'walker' => new Roots_Nav_Walker(), 'menu_class' => 'nav navbar-nav'));
@@ -33,4 +33,3 @@
 
 <?php
   load_template(STYLESHEETPATH.'/templates/components/masthead.php');
-?>
