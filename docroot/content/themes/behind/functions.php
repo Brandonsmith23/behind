@@ -31,3 +31,9 @@ foreach ($roots_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+
+function baldwin_func( $atts ){
+  return '<script type="text/javascript" src="http://www.webhealthyrecipes.com/baldwin_suite/ajax/ajax.js.php"></script>';
+  }
+add_shortcode( 'baldwin', 'baldwin_func' );
