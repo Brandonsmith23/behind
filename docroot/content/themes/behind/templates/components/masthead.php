@@ -75,7 +75,7 @@ if( $banner_arr = display_masthead() ) { ?>
                 $picture_html = render_picture_element( array(
                   'base_img' => $bk_img_arr['medium'],
                   'images'   => array(
-                    array( 'size' => '320px', 'srcset' => array( $bk_img_arr['homeslider-mobile'] ) ),
+                    array( 'size' => '700px', 'srcset' => array( $bk_img_arr['homeslider-mobile'] ) ),
                     array( 'size' => '768px', 'srcset' => array( $bk_img_arr['homeslider-image'] ) )
                   )
                 ) );
@@ -88,7 +88,7 @@ if( $banner_arr = display_masthead() ) { ?>
                 $picture_html = render_picture_element( array(
                   'base_img' => $bk_img_arr['medium'],
                   'images'   => array(
-                    array( 'size' => '320px', 'srcset' => array( $bk_img_arr['header-image-mobile'] ) ),
+                    array( 'size' => '700px', 'srcset' => array( $bk_img_arr['header-image-mobile'] ) ),
                     array( 'size' => '768px', 'srcset' => array( $bk_img_arr['header-image'] ) )
                   )
                 ) );
