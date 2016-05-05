@@ -3,7 +3,7 @@
     <div class="container">
       <nav class="snavbar">
         <div class="appstore">
-            <a href="https://itunes.apple.com/us/app/app-usa/id1063414332?mt=8"><img class="app-store" src="/content/themes/behind/assets/img/apple-app-store.png" /></a><a href="https://play.google.com/store/apps/details?id=com.btqrealestate&hl=en"><img class="google-play" src="/content/themes/behind/assets/img/google-play-badge.png" /></a>
+            <a href="https://play.google.com/store/apps/details?id=com.btqrealestate&hl=en"><img class="google-play" src="/content/themes/behind/assets/img/google-play-badge.png" /></a><a href="https://itunes.apple.com/us/app/app-usa/id1063414332?mt=8"><img class="app-store" src="/content/themes/behind/assets/img/apple-app-store.png" /></a>
         </div>
       </nav>
     </div>
